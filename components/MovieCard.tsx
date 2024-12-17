@@ -20,7 +20,7 @@ export default function MovieCard({ movie }: MovieCardProps) {
   const releaseDate = movie.release_date || movie.first_air_date
   const posterUrl = movie.poster_path
     ? `https://image.tmdb.org/t/p/w500${movie.poster_path}`
-    : '/placeholder.svg'
+    : '/dummy.png'
 
   return (
     <Card className="h-full flex flex-col">

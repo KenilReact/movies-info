@@ -45,7 +45,7 @@ export default function Home() {
     setCurrentSearch("");
     try {
       const response = await fetch(
-        `http://www.omdbapi.com/?apikey=${process.env.NEXT_PUBLIC_OMDB_API_KEY}&s=2023&type=movie&y=2023&page=${pageNumber}`
+        `https://www.omdbapi.com/?apikey=${process.env.NEXT_PUBLIC_OMDB_API_KEY}&s=2023&type=movie&y=2023&page=${pageNumber}`
       );
       const data = await response.json();
       if (data.Response === "True") {
@@ -74,7 +74,7 @@ export default function Home() {
 
     try {
       const response = await fetch(
-        `http://www.omdbapi.com/?apikey=${process.env.NEXT_PUBLIC_OMDB_API_KEY}&s=${query}&page=${pageNumber}`
+        `https://www.omdbapi.com/?apikey=${process.env.NEXT_PUBLIC_OMDB_API_KEY}&s=${query}&page=${pageNumber}`
       );
       const data = await response.json();
 
@@ -100,7 +100,7 @@ export default function Home() {
   const fetchMovieDetails = async (imdbID: string) => {
     try {
       const response = await fetch(
-        `http://www.omdbapi.com/?apikey=${process.env.NEXT_PUBLIC_OMDB_API_KEY}&i=${imdbID}&plot=full`
+        `https://www.omdbapi.com/?apikey=${process.env.NEXT_PUBLIC_OMDB_API_KEY}&i=${imdbID}&plot=full`
       );
       const data = await response.json();
       if (data.Response === "True") {
