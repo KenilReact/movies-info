@@ -30,7 +30,7 @@ export function MovieGrid({ movies, onMovieSelect }: MovieGridProps) {
           onClick={() => onMovieSelect(movie.imdbID)}
         >
           <CardContent className="p-0">
-            <div className="relative aspect-[2/3] overflow-hidden">
+            <div className="relative aspect-[3/3] overflow-hidden">
               <img
                 src={imageErrors[movie.imdbID] || movie.Poster === 'N/A' ? '/dummy.png' : movie.Poster}
                 alt={movie.Title}

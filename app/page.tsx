@@ -133,7 +133,7 @@ export default function Home() {
             className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600 cursor-pointer"
             onClick={handleHomeClick}
           >
-            Movie Search
+            Movie Info
           </h1>
         </div>
 
